@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Fast Link</title>
+      <meta charset="utf8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+      <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
+      <link href="css/bootflat.css" rel="stylesheet" media="screen">
+      <link href="css/bootflat-extensions.css" rel="stylesheet" media="screen">
+      <link href="css/bootflat-square.css" rel="stylesheet" media="screen">
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+      <![endif]-->
+
+      <style>
+        /* copy pasted from : http://www.cyberforum.ru/html/thread621152.html */
+        body{margin:0;padding:0;}
+        html,body{height:100%;}
+        #content{min-height:100%;}
+        * html #content{height:100%;}
+        #footer{margin-top:-60px;height:60px;
+        }
+      </style>
+      <script src="http://code.jquery.com/jquery.js" type="text/javascript"></script>
+      <script src="https://github.com/makeusabrew/bootbox/releases/download/v4.1.0/bootbox.min.js" type="text/javascript"></script>
+      <script src="js/app.js" type="text/javascript"></script>
+    </head>
+    <body onload="app_getServiceStatus();">
+      <div class="container bf-docs-examples" id="content" style="text-align: center;">
+        <h1>Fast Link - сервис сокращения ссылок</h1>
+        </br>
+        <h2>Введите исходную ссылку ниже : </h2>
+        <div id="app_worker">
+          <div class="input-group form-search">
+            <input id="app_link" type="text" class="form-control search-query">
+            <span class="input-group-btn">
+              <button type="buttom" class="btn btn-primary" onclick="app_sendLink();">Создать сокращенную ссылку</button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div id="footer" style="text-align: center;">
+        <h5>&copy; 2014 Alexandr Leutin</h5>
+      </div>
+
+      
+      <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
